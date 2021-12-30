@@ -3,11 +3,11 @@ owner: bloomuporg # Your GitHub organization or username, where this repository 
 repo: upptime # The name of this repository
 
 sites:
-  - name: BloomUp Website
+  - name: Website
     url: https://www.bloomup.org
-  - name: BloomUp Platform
-    url: https://app.bloomup.org
-  - name: BloomUp Video Conferentie
+  - name: Platform
+    url: https://app.bloomup.org  
+  - name: Video Conferentie
     url: https://meet.bloomup.org
 
 status-website:
@@ -16,14 +16,14 @@ status-website:
   cname: status.bloomup.org
   # baseUrl: /your-repo-name
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: BloomUp Uptime
+  name: BloomUp Service
   introTitle: "Check if all the BloomUp services are running smoothly."
   introMessage: 
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: BloomUp
+      href: https://bloomup.org
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
