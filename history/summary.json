@@ -22,19 +22,19 @@
     "url": "https://app.bloomup.org",
     "icon": "https://favicons.githubusercontent.com/app.bloomup.org",
     "slug": "bloom-up-platform",
-    "status": "down",
-    "uptime": "82.02%",
-    "uptimeDay": "82.02%",
-    "uptimeWeek": "82.02%",
-    "uptimeMonth": "82.02%",
-    "uptimeYear": "82.02%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
+    "status": "up",
+    "uptime": "2.01%",
+    "uptimeDay": "2.01%",
+    "uptimeWeek": "2.01%",
+    "uptimeMonth": "2.01%",
+    "uptimeYear": "2.01%",
+    "time": 257,
+    "timeDay": 257,
+    "timeWeek": 257,
+    "timeMonth": 257,
+    "timeYear": 257,
     "dailyMinutesDown": {
-      "2021-12-30": 0
+      "2021-12-30": 24
     }
   },
   {
