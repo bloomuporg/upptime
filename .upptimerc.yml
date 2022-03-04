@@ -7,8 +7,6 @@ sites:
     url: https://www.bloomup.org
   - name: Platform
     url: https://app.bloomup.org  
-  - name: Video Conferentie
-    url: https://meet.bloomup.org
   - name: Dashboards
     url: https://dashboards.bloomup.org
 
