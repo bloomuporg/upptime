@@ -4,19 +4,19 @@
     "url": "https://www.bloomup.org",
     "icon": "https://favicons.githubusercontent.com/www.bloomup.org",
     "slug": "website",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 199,
-    "timeDay": 134,
-    "timeWeek": 147,
-    "timeMonth": 187,
-    "timeYear": 199,
+    "status": "up",
+    "uptime": "99.96%",
+    "uptimeDay": "96.72%",
+    "uptimeWeek": "99.53%",
+    "uptimeMonth": "99.89%",
+    "uptimeYear": "99.96%",
+    "time": 198,
+    "timeDay": 121,
+    "timeWeek": 142,
+    "timeMonth": 185,
+    "timeYear": 198,
     "dailyMinutesDown": {
-      "2022-04-01": 0
+      "2022-04-01": 47
     }
   },
   {
