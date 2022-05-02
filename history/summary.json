@@ -40,7 +40,7 @@
     "url": "https://dashboards.bloomup.org",
     "icon": "https://favicons.githubusercontent.com/dashboards.bloomup.org",
     "slug": "dashboards",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -51,6 +51,8 @@
     "timeWeek": 813,
     "timeMonth": 877,
     "timeYear": 847,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2022-05-02": 0
+    }
   }
 ]
