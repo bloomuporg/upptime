@@ -5,19 +5,17 @@
     "icon": "https://favicons.githubusercontent.com/www.bloomup.org",
     "slug": "website",
     "status": "up",
-    "uptime": "99.99%",
-    "uptimeDay": "99.24%",
-    "uptimeWeek": "99.89%",
-    "uptimeMonth": "99.97%",
-    "uptimeYear": "99.99%",
-    "time": 214,
-    "timeDay": 713,
-    "timeWeek": 332,
-    "timeMonth": 231,
-    "timeYear": 214,
-    "dailyMinutesDown": {
-      "2022-05-30": 11
-    }
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 217,
+    "timeDay": 926,
+    "timeWeek": 418,
+    "timeMonth": 247,
+    "timeYear": 217,
+    "dailyMinutesDown": {}
   },
   {
     "name": "Platform",
@@ -31,9 +29,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 221,
-    "timeDay": 241,
-    "timeWeek": 290,
-    "timeMonth": 235,
+    "timeDay": 253,
+    "timeWeek": 282,
+    "timeMonth": 236,
     "timeYear": 221,
     "dailyMinutesDown": {}
   },
@@ -49,9 +47,9 @@
     "uptimeMonth": "99.96%",
     "uptimeYear": "99.99%",
     "time": 857,
-    "timeDay": 988,
-    "timeWeek": 955,
-    "timeMonth": 886,
+    "timeDay": 845,
+    "timeWeek": 976,
+    "timeMonth": 884,
     "timeYear": 857,
     "dailyMinutesDown": {
       "2022-05-02": 16
