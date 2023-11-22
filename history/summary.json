@@ -40,9 +40,9 @@
     "url": "https://dashboards.bloomup.org",
     "icon": "https://icons.duckduckgo.com/ip3/dashboards.bloomup.org.ico",
     "slug": "dashboards",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
@@ -51,6 +51,8 @@
     "timeWeek": 697,
     "timeMonth": 736,
     "timeYear": 710,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2023-11-22": 0
+    }
   }
 ]
