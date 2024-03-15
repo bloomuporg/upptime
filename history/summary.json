@@ -40,19 +40,19 @@
     "url": "https://dashboards.bloomup.org",
     "icon": "https://icons.duckduckgo.com/ip3/dashboards.bloomup.org.ico",
     "slug": "dashboards",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.36%",
+    "uptimeWeek": "99.91%",
+    "uptimeMonth": "99.98%",
     "uptimeYear": "100.00%",
-    "time": 707,
-    "timeDay": 599,
-    "timeWeek": 681,
-    "timeMonth": 707,
+    "time": 708,
+    "timeDay": 610,
+    "timeWeek": 676,
+    "timeMonth": 705,
     "timeYear": 710,
     "dailyMinutesDown": {
-      "2024-03-15": 0
+      "2024-03-15": 9
     }
   }
 ]
