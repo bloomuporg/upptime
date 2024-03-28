@@ -4,18 +4,20 @@
     "url": "https://www.bloomup.org",
     "icon": "https://icons.duckduckgo.com/ip3/www.bloomup.org.ico",
     "slug": "website",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 883,
-    "timeDay": 1149,
-    "timeWeek": 957,
-    "timeMonth": 918,
-    "timeYear": 900,
-    "dailyMinutesDown": {}
+    "timeDay": 887,
+    "timeWeek": 916,
+    "timeMonth": 908,
+    "timeYear": 899,
+    "dailyMinutesDown": {
+      "2024-03-28": 0
+    }
   },
   {
     "name": "Platform",
@@ -40,17 +42,19 @@
     "url": "https://dashboards.bloomup.org",
     "icon": "https://icons.duckduckgo.com/ip3/dashboards.bloomup.org.ico",
     "slug": "dashboards",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 708,
-    "timeDay": 953,
-    "timeWeek": 740,
-    "timeMonth": 701,
+    "timeDay": 809,
+    "timeWeek": 730,
+    "timeMonth": 700,
     "timeYear": 713,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2024-03-28": 0
+    }
   }
 ]
