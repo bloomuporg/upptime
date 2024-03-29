@@ -6,18 +6,16 @@
     "slug": "website",
     "status": "up",
     "uptime": "100.00%",
-    "uptimeDay": "99.39%",
-    "uptimeWeek": "99.91%",
-    "uptimeMonth": "99.98%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 883,
-    "timeDay": 911,
-    "timeWeek": 921,
-    "timeMonth": 910,
-    "timeYear": 900,
-    "dailyMinutesDown": {
-      "2024-03-28": 9
-    }
+    "timeDay": 848,
+    "timeWeek": 935,
+    "timeMonth": 916,
+    "timeYear": 901,
+    "dailyMinutesDown": {}
   },
   {
     "name": "Platform",
@@ -31,9 +29,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 214,
-    "timeDay": 184,
-    "timeWeek": 227,
-    "timeMonth": 193,
+    "timeDay": 343,
+    "timeWeek": 243,
+    "timeMonth": 199,
     "timeYear": 208,
     "dailyMinutesDown": {}
   },
@@ -44,17 +42,15 @@
     "slug": "dashboards",
     "status": "up",
     "uptime": "100.00%",
-    "uptimeDay": "99.39%",
-    "uptimeWeek": "99.91%",
-    "uptimeMonth": "99.98%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 709,
-    "timeDay": 777,
-    "timeWeek": 729,
-    "timeMonth": 700,
+    "time": 708,
+    "timeDay": 665,
+    "timeWeek": 727,
+    "timeMonth": 701,
     "timeYear": 713,
-    "dailyMinutesDown": {
-      "2024-03-28": 9
-    }
+    "dailyMinutesDown": {}
   }
 ]
