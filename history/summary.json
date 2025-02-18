@@ -4,7 +4,7 @@
     "url": "https://www.bloomup.org",
     "icon": "https://icons.duckduckgo.com/ip3/www.bloomup.org.ico",
     "slug": "website",
-    "status": "up",
+    "status": "down",
     "uptime": "99.98%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -16,6 +16,7 @@
     "timeMonth": 1113,
     "timeYear": 1049,
     "dailyMinutesDown": {
+      "2025-02-18": 0,
       "2024-12-03": 3,
       "2024-10-15": 69,
       "2024-10-10": 77,
