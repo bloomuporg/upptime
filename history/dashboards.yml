@@ -1,7 +1,7 @@
 url: https://dashboards.bloomup.org
-status: down
-code: 503
-responseTime: 648
-lastUpdated: 2026-01-08T09:43:58.493Z
+status: up
+code: 200
+responseTime: 1119
+lastUpdated: 2026-01-08T09:55:01.635Z
 startTime: 2021-12-30T18:12:22.000Z
 generator: Upptime <https://github.com/upptime/upptime>
