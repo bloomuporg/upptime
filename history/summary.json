@@ -4,17 +4,17 @@
     "url": "https://www.bloomup.org",
     "icon": "https://icons.duckduckgo.com/ip3/www.bloomup.org.ico",
     "slug": "website",
-    "status": "down",
+    "status": "up",
     "uptime": "99.96%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.90%",
+    "uptimeDay": "99.42%",
+    "uptimeWeek": "99.92%",
+    "uptimeMonth": "99.88%",
     "uptimeYear": "99.89%",
-    "time": 1221,
-    "timeDay": 2808,
-    "timeWeek": 2215,
-    "timeMonth": 3163,
-    "timeYear": 1235,
+    "time": 1223,
+    "timeDay": 2487,
+    "timeWeek": 2173,
+    "timeMonth": 3127,
+    "timeYear": 1237,
     "dailyMinutesDown": {
       "2025-11-06": 60,
       "2025-12-05": 27,
@@ -25,7 +25,7 @@
       "2026-06-03": 154,
       "2026-06-18": 98,
       "2026-10-20": 44,
-      "2026-11-03": 0
+      "2026-11-03": 8
     }
   },
   {
