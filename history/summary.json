@@ -4,17 +4,17 @@
     "url": "https://www.bloomup.org",
     "icon": "https://icons.duckduckgo.com/ip3/www.bloomup.org.ico",
     "slug": "website",
-    "status": "up",
+    "status": "down",
     "uptime": "99.96%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.90%",
-    "uptimeYear": "99.89%",
-    "time": 1228,
-    "timeDay": 1631,
-    "timeWeek": 2079,
-    "timeMonth": 3130,
-    "timeYear": 1243,
+    "uptimeDay": "99.80%",
+    "uptimeWeek": "99.97%",
+    "uptimeMonth": "99.89%",
+    "uptimeYear": "99.90%",
+    "time": 1289,
+    "timeDay": 16395,
+    "timeWeek": 4987,
+    "timeMonth": 3887,
+    "timeYear": 1324,
     "dailyMinutesDown": {
       "2025-12-05": 27,
       "2026-01-27": 15,
@@ -23,7 +23,8 @@
       "2026-05-27": 87,
       "2026-06-03": 154,
       "2026-06-18": 98,
-      "2026-10-20": 44
+      "2026-10-20": 44,
+      "2026-11-06": 3
     }
   },
   {
@@ -31,18 +32,20 @@
     "url": "https://app.bloomup.org",
     "icon": "https://icons.duckduckgo.com/ip3/app.bloomup.org.ico",
     "slug": "platform",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 689,
-    "timeDay": 565,
-    "timeWeek": 1227,
-    "timeMonth": 1456,
-    "timeYear": 817,
-    "dailyMinutesDown": {}
+    "time": 751,
+    "timeDay": 15751,
+    "timeWeek": 4941,
+    "timeMonth": 2350,
+    "timeYear": 900,
+    "dailyMinutesDown": {
+      "2026-11-06": 0
+    }
   },
   {
     "name": "Dashboards",
@@ -59,7 +62,7 @@
     "timeDay": 1025,
     "timeWeek": 1551,
     "timeMonth": 1673,
-    "timeYear": 1080,
+    "timeYear": 1083,
     "dailyMinutesDown": {
       "2025-12-05": 27,
       "2025-12-11": 4,
