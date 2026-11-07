@@ -35,6 +35,11 @@
   --code-background-color: #ecf8ff; /* sky blue light */
   --graph-opacity: 1;
   --graph-filter: none;
+  /* Teal #89e0cf / #1abc9c of the generated sparkline PNGs -> #84c3e1 /
+     #279dd5, i.e. BloomUp sky blue; fitted numerically, since CSS
+     hue-rotate is not an exact HSL hue shift. */
+  --sparkline-filter: hue-rotate(36deg) saturate(1.1) brightness(0.9);
+  --sparkline-opacity: 1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,8 +61,7 @@
     --change-background-color: #4a4120;
     --code-color: #fdf9f6;
     --code-background-color: #2a4a5e;
-    --graph-opacity: 0.85;
-    --graph-filter: invert(1) hue-rotate(180deg);
+    --sparkline-opacity: 0.75;
   }
 
   /* The wordmark is jet black; turn it light on the dark nav. */
@@ -86,6 +90,34 @@ nav .logo img {
 
 article {
   border-radius: 0.75rem;
+}
+
+/*
+ * The main-page sparklines are teal PNGs from @upptime/graphs, which has no
+ * colour option, drawn as the card's own background image. A filter on the
+ * card would recolour its text too, so the image moves to a pseudo-element
+ * behind the content (isolation keeps it above the card background) and only
+ * that is filtered. The history-page charts take graphBackgroundColor /
+ * graphBorderColor from .upptimerc.yml instead.
+ */
+.live-status article.graph {
+  background-image: none !important;
+  isolation: isolate;
+}
+
+.live-status article.graph::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background-image: var(--background);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+  filter: var(--sparkline-filter);
+  opacity: var(--sparkline-opacity);
+  pointer-events: none;
 }
 
 .tag {
