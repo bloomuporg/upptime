@@ -108,18 +108,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/status.bloomup.org.ico",
     "slug": "e2-e-test",
     "status": "up",
-    "uptime": "8.56%",
-    "uptimeDay": "8.56%",
-    "uptimeWeek": "8.56%",
-    "uptimeMonth": "8.56%",
-    "uptimeYear": "8.56%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 531,
     "timeDay": 531,
     "timeWeek": 531,
     "timeMonth": 531,
     "timeYear": 531,
-    "dailyMinutesDown": {
-      "2026-11-07": 4
-    }
+    "dailyMinutesDown": {}
   }
 ]
