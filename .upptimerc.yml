@@ -13,20 +13,34 @@ sites:
     url: https://app.bloomup.org
   - name: API
     url: https://bloomup-api.bloomup.org/health
+    # The API host has no favicon, so Upptime's DuckDuckGo fallback is blank.
+    icon: https://status.bloomup.org/api.svg
   - name: Dashboards
     url: https://dashboards.bloomup.org/api/health
 
+# Files under assets/ in the Upptime repo are copied to the site root on
+# build, so the theme and logo keep working when www.bloomup.org is down.
 status-website:
   cname: status.bloomup.org
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: BloomUp Service
-  introTitle: "Check if all the BloomUp services are running smoothly."
-  introMessage:
+  name: BloomUp Status
+  logoUrl: https://status.bloomup.org/logo.svg
+  # The logo is the wordmark, so the name next to it would say it twice.
+  hideNavTitle: true
+  themeUrl: https://status.bloomup.org/bloomup.css
+  favicon: https://www.bloomup.org/bloomup/favicon-32x32.png
+  customHeadHtml: >-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Poppins:wght@600&display=swap">
+  introTitle: "Is BloomUp working?"
+  introMessage: "Live status of the BloomUp platform. Having trouble that isn't shown here? Mail us at [support@bloomup.org](mailto:support@bloomup.org)."
   navbar:
     - title: Status
       href: /
+    - title: Support
+      href: mailto:support@bloomup.org
     - title: BloomUp
-      href: https://bloomup.org
+      href: https://www.bloomup.org
 
 i18n:
   # Day/month/year dates and 24h times on the status page (default follows the
