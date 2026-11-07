@@ -1,0 +1,76 @@
+# Managed by OpenTofu from scaleway-infrastructure
+# (opentofu/modules/upptime/files/pagerduty.yml); edits made in this repo are
+# overwritten on the next apply. Not part of the Upptime template, so the
+# template updater leaves it alone.
+#
+# Pages PagerDuty for every open "<site> is down" issue and resolves the
+# incident once the issue closes. Degraded-performance issues don't page.
+# Paging honours the same 22:00-06:00 Europe/Brussels mute as the Cockpit
+# Alertmanager: a site still down at 06:00 pages on the first scheduled run
+# after the mute ends. Resolves are always sent.
+name: PagerDuty
+on:
+  issues:
+    types: [opened, reopened, closed]
+  schedule:
+    # Backstop for the mute end and for issue events that never ran this.
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+concurrency:
+  group: pagerduty
+  cancel-in-progress: false
+permissions:
+  issues: read
+jobs:
+  sync:
+    name: Sync incidents to PagerDuty
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync incidents to PagerDuty
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ROUTING_KEY: ${{ secrets.PAGERDUTY_ROUTING_KEY }}
+        run: |
+          set -euo pipefail
+          : "${ROUTING_KEY:?PAGERDUTY_ROUTING_KEY secret is not set}"
+
+          hour=$(TZ=Europe/Brussels date +%-H)
+          muted=false
+          if [ "$hour" -ge 22 ] || [ "$hour" -lt 6 ]; then muted=true; fi
+
+          # Upptime labels each incident issue `status` plus the site slug; the
+          # slug is the dedup key, so one site maps to one PagerDuty incident.
+          # Resolves cover issues closed in the last 2h whose site has no open
+          # incident, which catches a missed `closed` event.
+          gh issue list --label status --state all --limit 50 \
+            --json state,title,url,labels,closedAt \
+            | jq -r --argjson since "$(( $(date +%s) - 7200 ))" '
+                map(select(.title | endswith(" is down"))
+                    | . + {slug: ([.labels[].name | select(. != "status")][0])})
+                | map(select(.state == "OPEN")) as $open
+                | ($open | map(.slug)) as $open_slugs
+                | ($open[] | ["trigger", .slug, .title, .url]),
+                  (map(select(.state == "CLOSED"
+                              and (.closedAt | fromdate) > $since
+                              and (.slug as $s | $open_slugs | index($s) | not)))
+                   | unique_by(.slug)[]
+                   | ["resolve", .slug, .title, .url])
+                | @tsv' \
+            | while IFS=$'\t' read -r action slug title url; do
+                if [ "$action" = trigger ] && [ "$muted" = true ]; then
+                  echo "muted (Brussels ${hour}h): $title"
+                  continue
+                fi
+                jq -n --arg key "$ROUTING_KEY" --arg action "$action" \
+                  --arg dedup "upptime-$slug" --arg summary "$title" --arg url "$url" '{
+                    routing_key: $key,
+                    event_action: $action,
+                    dedup_key: $dedup,
+                    payload: {summary: $summary, source: "upptime", severity: "critical"},
+                    links: [{href: $url, text: "Upptime issue"}]
+                  }' \
+                  | curl -fsS -X POST https://events.eu.pagerduty.com/v2/enqueue \
+                      -H 'Content-Type: application/json' -d @- >/dev/null
+                echo "$action upptime-$slug: $title"
+              done
