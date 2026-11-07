@@ -3,6 +3,10 @@
 # overwritten on the next apply.
 owner: bloomuporg
 repo: upptime
+# Runner for every generated workflow. The jobs are light (HTTP checks, a
+# small static-site build), well within ubuntu-slim's single vCPU and its
+# 15-minute job limit.
+runner: ubuntu-slim
 
 # A site's slug (and so its history, graphs and issue label) is derived from
 # its name: change a URL freely, but renaming a site starts a new history.
