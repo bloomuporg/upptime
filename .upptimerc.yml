@@ -27,3 +27,8 @@ status-website:
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
+
+i18n:
+  # Day/month/year dates and 24h times on the status page (default follows the
+  # visitor's browser, which shows US-style dates for most English locales).
+  locale: en-GB
