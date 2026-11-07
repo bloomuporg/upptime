@@ -1,32 +1,32 @@
-# Change these first
-owner: bloomuporg # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Managed by OpenTofu from scaleway-infrastructure
+# (opentofu/modules/upptime/files/upptimerc.yml); edits made in this repo are
+# overwritten on the next apply.
+owner: bloomuporg
+repo: upptime
 
+# A site's slug (and so its history, graphs and issue label) is derived from
+# its name: change a URL freely, but renaming a site starts a new history.
 sites:
   - name: Website
     url: https://www.bloomup.org
   - name: Platform
-    url: https://app.bloomup.org  
+    url: https://app.bloomup.org
+  - name: API
+    url: https://bloomup-api.bloomup.org/health
   - name: Dashboards
-    url: https://dashboards.bloomup.org
+    url: https://dashboards.bloomup.org/api/health
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: status.bloomup.org
-  # baseUrl: /your-repo-name
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: BloomUp Service
   introTitle: "Check if all the BloomUp services are running smoothly."
-  introMessage: 
+  introMessage:
   navbar:
     - title: Status
       href: /
     - title: BloomUp
       href: https://bloomup.org
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
 
 i18n:
   # Day/month/year dates and 24h times on the status page (default follows the
