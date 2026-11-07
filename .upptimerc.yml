@@ -23,7 +23,7 @@ sites:
     url: https://dashboards.bloomup.org/api/health
   # TEMPORARY end-to-end test, removed again by the same test
   - name: E2E test
-    url: https://status.bloomup.org/e2e-test-404
+    url: https://status.bloomup.org/
 
 # Response-time chart on each site's history page: BloomUp sky blue fill and
 # proto-blue line. The main-page sparklines are images; bloomup.css recolours
