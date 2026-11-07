@@ -22,6 +22,12 @@ sites:
   - name: Dashboards
     url: https://dashboards.bloomup.org/api/health
 
+# Response-time chart on each site's history page: BloomUp sky blue fill and
+# proto-blue line. The main-page sparklines are images; bloomup.css recolours
+# those.
+graphBackgroundColor: "#86c5ed"
+graphBorderColor: "#1c7cba"
+
 # Files under assets/ in the Upptime repo are copied to the site root on
 # build, so the theme and logo keep working when www.bloomup.org is down.
 status-website:
