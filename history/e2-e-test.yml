@@ -1,7 +1,7 @@
-url: https://status.bloomup.org/e2e-test-404
-status: down
-code: 404
-responseTime: 182
-lastUpdated: 2026-11-07T11:19:21.941Z
+url: https://status.bloomup.org/
+status: up
+code: 200
+responseTime: 879
+lastUpdated: 2026-11-07T11:23:36.106Z
 startTime: 2026-11-07T11:19:09.025Z
 generator: Upptime <https://github.com/upptime/upptime>
