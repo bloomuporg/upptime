@@ -1,0 +1,98 @@
+/*
+ * BloomUp theme for status.bloomup.org, loaded through `themeUrl`.
+ * Managed by OpenTofu from scaleway-infrastructure
+ * (opentofu/modules/upptime/files/assets/bloomup.css).
+ *
+ * A custom theme replaces Upptime's built-in light/dark themes, so this file
+ * defines every variable they do, for both colour schemes. Colours are the
+ * `--bu-*` palette of www.bloomup.org; fonts (Mulish, Poppins) come from
+ * customHeadHtml in .upptimerc.yml.
+ */
+:root {
+  --body-background-color: #fdf9f6; /* isabelline */
+  --body-text-color: #2e2e2e; /* jet black */
+  --card-background-color: #ffffff;
+  --card-border-color: #f3e9e1; /* isabelline dark */
+  --nav-background-color: #ffffff;
+  --nav-border-bottom-color: #f3e9e1;
+  --nav-current-border-bottom-color: #1c7cba; /* proto blue */
+  --up-border-left-color: #4db377; /* confirm */
+  --down-border-left-color: #d14747; /* destructive */
+  --down-background-color: #fdedeb; /* salmon pink light */
+  --degraded-border-left-color: #f6b26b; /* valencia orange */
+  --tag-color: #ffffff;
+  --tag-up-background-color: #4db377;
+  --tag-down-background-color: #d14747;
+  --tag-degraded-background-color: #e0962f;
+  --change-background-color: #feefb5; /* naples yellow mid */
+  --error-button-border-color: #15689e;
+  --error-button-background-color: #1c7cba;
+  --error-button-color: #ffffff;
+  --submit-button-border-color: #15689e;
+  --submit-button-background-color: #1c7cba;
+  --submit-button-color: #ffffff;
+  --code-color: #2e2e2e;
+  --code-background-color: #ecf8ff; /* sky blue light */
+  --graph-opacity: 1;
+  --graph-filter: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background-color: #1a1a1a;
+    --body-text-color: #fdf9f6;
+    --card-background-color: #242424;
+    --card-border-color: #ffffff1f;
+    --nav-background-color: #242424;
+    --nav-border-bottom-color: #ffffff1f;
+    --nav-current-border-bottom-color: #86c5ed; /* sky blue */
+    --up-border-left-color: #64b486;
+    --down-border-left-color: #d74242;
+    --down-background-color: #3a2422;
+    --degraded-border-left-color: #f6b26b;
+    --tag-up-background-color: #3f8f61;
+    --tag-down-background-color: #c23b3b;
+    --tag-degraded-background-color: #b8741f;
+    --change-background-color: #4a4120;
+    --code-color: #fdf9f6;
+    --code-background-color: #2a4a5e;
+    --graph-opacity: 0.85;
+    --graph-filter: invert(1) hue-rotate(180deg);
+  }
+
+  /* The wordmark is jet black; turn it light on the dark nav. */
+  nav .logo img {
+    filter: invert(1) brightness(1.6);
+  }
+}
+
+body {
+  font-family: "Mulish", system-ui, -apple-system, "Segoe UI", sans-serif;
+  background-color: var(--body-background-color);
+  color: var(--body-text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-weight: 600;
+}
+
+nav .logo img {
+  height: 2rem;
+}
+
+article {
+  border-radius: 0.75rem;
+}
+
+.tag {
+  border-radius: 999px;
+}
+
+a.error-button,
+.submit-button {
+  border-radius: 999px;
+}
