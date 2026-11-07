@@ -1,7 +1,7 @@
-url: https://dashboards.bloomup.org
+url: https://dashboards.bloomup.org/api/health
 status: up
 code: 200
-responseTime: 807
-lastUpdated: 2026-11-07T10:07:06.874Z
+responseTime: 678
+lastUpdated: 2026-11-07T10:24:47.734Z
 startTime: 2021-12-30T18:12:22.000Z
 generator: Upptime <https://github.com/upptime/upptime>
