@@ -1,7 +1,7 @@
 url: https://dashboards.bloomup.org/api/health
-status: down
-code: 503
-responseTime: 1156
-lastUpdated: 2026-11-20T23:06:06.573Z
+status: up
+code: 200
+responseTime: 1453
+lastUpdated: 2026-11-21T10:12:14.475Z
 startTime: 2021-12-30T18:12:22.000Z
 generator: Upptime <https://github.com/upptime/upptime>
